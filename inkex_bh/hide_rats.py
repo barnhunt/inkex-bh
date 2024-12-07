@@ -244,7 +244,7 @@ def _clone_layer(
         copy.update(**attrib)
         copy.text = elem.text
         copy.tail = elem.tail
-        copy.extend(map(clone, elem))
+        copy.extend([clone(child) for child in elem])
 
         if elem in selected:
             cloned_selected.add(copy)
