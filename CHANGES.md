@@ -7,6 +7,7 @@
   issues.
 
 - Test under python 3.12.
+- Test under inkex 1.4.0
 
 #### style
 
