@@ -4,7 +4,7 @@
 
 Fix for Inkscape 1.4.
 
-- Fix `clone_rats.py` for changes in etree API introduced with Inkscape 1.4
+- Fix `hide_rats.py` for changes in etree API introduced with Inkscape 1.4
 
 - Drop support for python 3.7.  Since we only support Inkscape>=1.0
   and inkscape 1.0 shipped with python 3.8 this should not cause
