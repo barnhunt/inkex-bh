@@ -119,6 +119,17 @@ def test_RatGuide_add_exclusion(svg_maker):
     assert rg.exclusions == [exclusion]
 
 
+def test_RatGuide_add_exclusion_sets_style(svg_maker):
+    exclusion = inkex.BoundingBox((10, 11), (5, 6))
+    rg = RatGuide([], svg_maker.layer1)
+    rg.add_exclusion(exclusion)
+    elems = rg.guide_layer.xpath(
+        ".//*[@bh:rat-guide-mode='exclusion']", namespaces=NSMAP
+    )
+    assert len(elems) == 1
+    assert set(elems[0].style) >= {"fill", "stroke"}
+
+
 def test_RatGuide_add_exclusion_is_persistent(svg_maker):
     exclusion = inkex.BoundingBox((10, 11), (5, 6))
     rg = RatGuide([], svg_maker.layer1)
