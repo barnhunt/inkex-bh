@@ -21,7 +21,6 @@ import re
 from argparse import ArgumentParser
 from functools import reduce
 from operator import add
-from types import MappingProxyType
 from typing import Final
 from typing import Iterable
 from typing import Iterator
@@ -115,26 +114,22 @@ class RatGuide:
         self._add_rect(bbox, "exclusion")
         self.exclusions.append(bbox)
 
-    DEFAULT_STYLE: Final = MappingProxyType(
-        {
-            "fill": "#c68c8c",
-            "fill-opacity": "0.125",
-            "stroke": "#ff0000",
-            "stroke-width": "1",
-            "stroke-opacity": "0.5",
-            "stroke-dasharray": "2,6",
-            "stroke-linecap": "round",
-            "stroke-miterlimit": "4",
-        }
-    )
-    STYLES: Final = MappingProxyType(
-        {
-            "notation": {
-                **DEFAULT_STYLE,
-                "fill": "#aaaaaa",
-            }
-        }
-    )
+    DEFAULT_STYLE: Final = {
+        "fill": "#c68c8c",
+        "fill-opacity": "0.125",
+        "stroke": "#ff0000",
+        "stroke-width": "1",
+        "stroke-opacity": "0.5",
+        "stroke-dasharray": "2,6",
+        "stroke-linecap": "round",
+        "stroke-miterlimit": "4",
+    }
+    STYLES: Final = {
+        "notation": {
+            **DEFAULT_STYLE,
+            "fill": "#aaaaaa",
+        },
+    }
 
     def _add_rect(self, bbox: inkex.BoundingBox, mode: GuideMode) -> None:
         rect = inkex.Rectangle.new(bbox.left, bbox.top, bbox.width, bbox.height)

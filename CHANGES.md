@@ -1,5 +1,9 @@
 ## Changes
 
+### 1.0.2 (unreleased)
+
+- `hide_rats.py`: Fix unstyled guide-layer rectangles. (Bug introduced in 1.0.1.)
+
 ### 1.0.1 (2024-11-07)
 
 Fix for Inkscape 1.4.
