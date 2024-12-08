@@ -1,6 +1,6 @@
 ## Changes
 
-### 1.0.2 (unreleased)
+### 1.0.2 (2024-11-07)
 
 - `hide_rats.py`: Fix unstyled guide-layer rectangles. (Bug introduced in 1.0.1.)
 
