@@ -130,6 +130,8 @@ to install both these extensions and my [symbol
 sets](https://github.com/barnhunt/bh-symbols) into
 your Inkscape configuration.
 
+> 💡 **Tip** If you have already installed the `inkex-bh` extensions and/or `bh-symbols` symbols sets using `barnhunt install` and want to update those to the latest published versions, run `barnhunt install --upgrade`.
+
 ### Manual Installation
 
 It is now recommended to use the `barnhunt install` sub-command to
@@ -154,7 +156,7 @@ To manually install a released version of this package:
    unzip -d "$(inkscape --user-data-directory)/extensions" inkex_bh-X.Y.Z.zip
    ```
 
-> **Warning**: It is no longer recommended to install the extensions
+> ⚠️ **Warning**: It is no longer recommended to install the extensions
   using `pip`.  (Though, for now, the package will continue to be
   published to PyPI.)
 
@@ -177,24 +179,13 @@ That should build a zip archive in the `dist/` subdirectory.
 ## What's Elsewhere?
 
 There are two other bits I use when drawing maps.
+All are available at https://github.com/barnhunt/
 
-Neither of these are published in a public place, yet.
-
-And, of course, their use is not documented at all.
-
+Of course, their use is not documented at all.
 Kick me if you want to know more.
 
 
-### Barn Hunt Symbol Libraries for Inkscape
-
-I've constructed some symbol libraries for Inkscape containing things
-like bales, boards, rat markers, fluff pile symbols, etc.
-
-I've even got a semi-automatic scheme set up by which I can generate
-symbol sets for arbitrary sized bales.
-
-
-### The `barnhunt` command-line export utility
+### The [`barnhunt`][barnhunt] command-line export utility
 
 I draw all my maps for a given course (for a day or weekend) on
 various nested layers in a single drawing.  By hiding and unhiding
@@ -207,11 +198,20 @@ text in the drawings.  This can be used to automate the printing of
 course names and blind numbers on the exported map, and is also used
 to generate the random Master rat numbers.
 
-Sadly, at present there is zero documentation on how to use it.
-
-Kick me if you want to know more.
+There is a `barnhunt install` subcommand that can be used to install this package (inkex-bh) as well as the bh-symbols symbol set for use by Inkscape.
+Generally, you only really need to install or update `barnhunt`, then run `barnhunt install -U` to ensure you have the latest version of the Inkscape extensions and symbols install.
 
 [barnhunt]: https://github.com/barnhunt/barnhunt
+
+### [bh-symbols]: Barn Hunt Symbol Libraries for Inkscape
+
+I've constructed some symbol libraries for Inkscape containing things
+like bales, boards, rat markers, fluff pile symbols, etc.
+
+I've even got a semi-automatic scheme set up by which I can generate
+symbol sets for arbitrary sized bales.
+
+[bh-symbols]: https://github.com/barnhunt/bh-symbols
 
 ## Author
 
