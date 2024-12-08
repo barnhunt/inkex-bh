@@ -3,7 +3,7 @@
 [![Tests](https://github.com/barnhunt/inkex-bh/actions/workflows/tests.yml/badge.svg)](https://github.com/barnhunt/inkex-bh/actions/workflows/tests.yml)
 [![PyPI Version](https://img.shields.io/pypi/v/inkex-bh.svg)](https://pypi.org/project/inkex-bh/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/inkex-bh.svg)](https://pypi.org/project/inkex-bh/)
-[![Inkscape Versions](https://img.shields.io/badge/Inkscape-1.0%E2%80%931.2-blue.svg?logo=inkscape)](https://inkscape.org/)
+[![Inkscape Versions](https://img.shields.io/badge/Inkscape-1.0%E2%80%931.4-blue.svg?logo=inkscape)](https://inkscape.org/)
 [![PyPI Status](https://img.shields.io/pypi/status/inkex-bh.svg)](https://pypi.org/project/inkex-bh/)
 [![Trackgit Views](https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/lhaq7ky5ax237etf70pl)](https://trackgit.com)
 
@@ -24,8 +24,7 @@ extensions are totally untested on Windows), so I'm not sure that
 they're generally useful, yet.
 
 The goal is for these to work on all version of Inkscape with versions
-of 1.0 or greater.  Currently, these have be cursorily tested under
-Inkscape versions 1.1.2 and 1.2.1.
+of 1.0 or greater.
 
 [Inkscape]: https://inkscape.org/ (The Inkscape home page)
 [Barn Hunt]: https://www.barnhunt.com/ (Barn Hunt — a fabulous sport for dogs)
